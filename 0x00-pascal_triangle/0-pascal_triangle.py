@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 '''Module for Pascal triangle'''
+
+
 def pascal_triangle(n):
     '''Function that returns pascal_triangle'''
     triangle = []
