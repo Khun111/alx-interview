@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 '''Module for Pascal triangle'''
 def pascal_triangle(n):
     '''Function that returns pascal_triangle'''
@@ -11,4 +12,4 @@ def pascal_triangle(n):
                 previous_row = triangle[row - 1]
                 current_row.append(previous_row[col - 1] + previous_row[col])
         triangle.append(current_row)
-    return triangle
+    return (triangle)
