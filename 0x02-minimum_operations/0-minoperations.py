@@ -3,6 +3,7 @@
 
 
 def minOperations(n):
+    '''Function for mini operations'''
     if n <= 1:
         return 0
     factor = 2
