@@ -12,9 +12,9 @@ try:
     for log in stdin:
         if len(log.split()) == 9:
             status_code, file_size = log.split()[-2], log.split()[-1]
+            total_size += int(file_size)
             if status_code.isdigit() and int(status_code) in possible:
                 status_dict[status_code] += 1
-                total_size += int(file_size)
                 line_count += 1
         if line_count % 10 == 0:
             print("File size: {}".format(total_size))
