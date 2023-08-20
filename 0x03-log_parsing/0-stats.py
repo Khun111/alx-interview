@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+'''Log parsing module: prints total file size and \
+status code in ascending order'''
 from sys import stdin
 from collections import Counter
 
