@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-'''Mofule for N Queens'''
+'''Module for N Queens'''
 import sys
 
 
 def is_safe(board, row, col, n):
-    '''Function for N Queens'''
+    '''Function for N Queens safe position'''
     # Check if there is a queen in the same column
     for i in range(row):
         if board[i][col] == 1:
@@ -24,6 +24,7 @@ def is_safe(board, row, col, n):
 
 
 def solve_nqueens(n):
+    '''Function for N Queens utility'''
     if n < 4:
         print("N must be at least 4")
         sys.exit(1)
@@ -35,6 +36,7 @@ def solve_nqueens(n):
 
 
 def solve_nqueens_util(board, row, n, solutions):
+    '''Function for N Queens'''
     if row == n:
         solution = []
         for i in range(n):
@@ -52,10 +54,9 @@ def solve_nqueens_util(board, row, n, solutions):
 
 
 def print_solutions(solutions):
+    '''Function for N Queens print helper'''
     for solution in solutions:
-        for row in solution:
-            print(row)
-        print()
+        print(solution)
 
 
 if __name__ == "__main__":
