@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''Module for island perimeter task'''
 
+
 def island_perimeter(grid):
     '''Island perimeter function'''
     perimeter = 0
