@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''Module for prime game function'''
+
+
 def is_prime(n):
     '''Function to check for prime number'''
     if n < 2:
@@ -8,6 +11,7 @@ def is_prime(n):
             return False
     return True
 
+
 def get_primes(n):
     '''Function to add prime numbers from 1 to n'''
     primes = []
@@ -16,8 +20,9 @@ def get_primes(n):
             primes.append(i)
     return primes
 
+
 def isWinner(x, nums):
-    '''Function to get winner of prime game''' 
+    '''Function to get winner of prime game'''
     maria = 0
     ben = 0
 
@@ -25,7 +30,7 @@ def isWinner(x, nums):
         primes = get_primes(n)
         available_set = [True] * (n + 1)
         available_set[0] = available_set[1] = False
-        
+
         maria_turn = True
         while True:
             found = False
